@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+#wrap{font-family: 맑은고딕;}
+
+section{
+    background-image: url(../images/img_bg.png);
+    background-size: cover;
+}
+
+section>h2{
+    padding: 25px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+article>ul{
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    margin-top: -15px;
+}
+
+article>ul>li{
+    display: block;
+    width: calc(100% / 3);
+    margin: 20px;
+    padding: 30px;
+
+    text-align: center;
+    line-height: 24px;
+
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+article>ul>li>h4{
+    display: block;
+    position: relative;
+    padding: 5px;
+
+    width: 80px;
+    height: 15px;
+    margin: 120px auto 0;
+    margin-left: 300px;
+
+    color: #fff;
+    line-height: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-indent: 25px;
+
+    background-color: rgb(83, 29, 209);
+}
+
+article>ul>li:nth-child(1)>h4:after{
+    display: block;
+    position: absolute;
+    top: -119px;
+    right: 43px;
+
+    width: 150px;
+    height: 150px;
+
+    background-image: url(../images/p1.png);
+    background-size: cover;
+    border-radius: 50%;
+    content: '';
+}
+
+article>ul>li:nth-child(2)>h4:after{
+    display: block;
+    position: absolute;
+    top: -119px;
+    right: 43px;
+
+    width: 150px;
+    height: 150px;
+
+    background-image: url(../images/p2.png);
+    background-size: cover;
+    border-radius: 50%;
+    content: '';
+}
+
+article>ul>li:nth-child(3)>h4:after{
+    display: block;
+    position: absolute;
+    top: -119px;
+    right: 43px;
+
+    width: 150px;
+    height: 150px;
+
+    background-image: url(../images/p3.png);
+    background-size: cover;
+    border-radius: 50%;
+    content: '';
+}
+
+
+article>ul>li>.tit{
+    display: block;
+    margin-top: 15px;
+    font-weight: 800;
+}
+article>ul>li>.cont{
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:765px){
+
+    article>ul{
+        display: block;
+        width: 90%;
+        min-height: 1200px;
+        margin: 0 auto;
+    }
+
+    article>ul>li{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    article>ul>li>h4{
+        margin-left: 58%;
+    }
+}
+
+
+
